@@ -25,7 +25,8 @@ namespace ClassLibrary1
                         {
                             while (reader.Read())
                             {
-                                Console.WriteLine(reader["CustomerName"]);
+                                Console.WriteLine(reader["id"]);
+                                Console.WriteLine(reader["name"]);
                             }
                         }
                     }

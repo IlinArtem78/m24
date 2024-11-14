@@ -10,3 +10,16 @@ D:\module24\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.dll
 D:\module24\ClassLibrary1\obj\Debug\net8.0\refint\ClassLibrary1.dll
 D:\module24\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.pdb
 D:\module24\ClassLibrary1\obj\Debug\net8.0\ref\ClassLibrary1.dll
+D:\module24\m24\ClassLibrary1\bin\Debug\net8.0\ClassLibrary1.deps.json
+D:\module24\m24\ClassLibrary1\bin\Debug\net8.0\ClassLibrary1.dll
+D:\module24\m24\ClassLibrary1\bin\Debug\net8.0\ClassLibrary1.pdb
+D:\module24\m24\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.csproj.AssemblyReference.cache
+D:\module24\m24\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.GeneratedMSBuildEditorConfig.editorconfig
+D:\module24\m24\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.AssemblyInfoInputs.cache
+D:\module24\m24\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.AssemblyInfo.cs
+D:\module24\m24\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.csproj.CoreCompileInputs.cache
+D:\module24\m24\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.sourcelink.json
+D:\module24\m24\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.dll
+D:\module24\m24\ClassLibrary1\obj\Debug\net8.0\refint\ClassLibrary1.dll
+D:\module24\m24\ClassLibrary1\obj\Debug\net8.0\ClassLibrary1.pdb
+D:\module24\m24\ClassLibrary1\obj\Debug\net8.0\ref\ClassLibrary1.dll

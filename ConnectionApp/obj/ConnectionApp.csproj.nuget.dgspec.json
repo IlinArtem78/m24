@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\module24\\ConnectionApp\\ConnectionApp.csproj": {}
+    "D:\\module24\\m24\\ConnectionApp\\ConnectionApp.csproj": {}
   },
   "projects": {
-    "D:\\module24\\ClassLibrary1\\ClassLibrary1.csproj": {
+    "D:\\module24\\m24\\ClassLibrary1\\ClassLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\module24\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectUniqueName": "D:\\module24\\m24\\ClassLibrary1\\ClassLibrary1.csproj",
         "projectName": "ClassLibrary1",
-        "projectPath": "D:\\module24\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectPath": "D:\\module24\\m24\\ClassLibrary1\\ClassLibrary1.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\module24\\ClassLibrary1\\obj\\",
+        "outputPath": "D:\\module24\\m24\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -70,14 +70,14 @@
         }
       }
     },
-    "D:\\module24\\ConnectionApp\\ConnectionApp.csproj": {
+    "D:\\module24\\m24\\ConnectionApp\\ConnectionApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\module24\\ConnectionApp\\ConnectionApp.csproj",
+        "projectUniqueName": "D:\\module24\\m24\\ConnectionApp\\ConnectionApp.csproj",
         "projectName": "ConnectionApp",
-        "projectPath": "D:\\module24\\ConnectionApp\\ConnectionApp.csproj",
+        "projectPath": "D:\\module24\\m24\\ConnectionApp\\ConnectionApp.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\module24\\ConnectionApp\\obj\\",
+        "outputPath": "D:\\module24\\m24\\ConnectionApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -94,8 +94,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\module24\\ClassLibrary1\\ClassLibrary1.csproj": {
-                "projectPath": "D:\\module24\\ClassLibrary1\\ClassLibrary1.csproj"
+              "D:\\module24\\m24\\ClassLibrary1\\ClassLibrary1.csproj": {
+                "projectPath": "D:\\module24\\m24\\ClassLibrary1\\ClassLibrary1.csproj"
               }
             }
           }
