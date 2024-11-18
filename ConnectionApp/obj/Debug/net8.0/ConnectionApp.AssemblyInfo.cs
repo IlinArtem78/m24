@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConnectionApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85dc9451399d85f871d2f02044afde5d07b64c5a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0bf61cc07870e7a7c1c8e0db0d2abf9fbc40505a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConnectionApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConnectionApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -4,63 +4,101 @@ using Ado_net;
 using System.IO;
 using System.Data;
 using System.Text;
+using Microsoft.Data.SqlClient;
 class Program
 {
-
+  static Manager manager; 
  public static void Main(string[] args)
     {
-        // var t = new ClassLibrary1.Class1(); 
-        // t.Connect();
-        var connector = new MainConnector();
-        Console.OutputEncoding = Encoding.Unicode; 
-        var result = connector.ConnectAsync();
-
-        var data = new DataTable();
-
-        if (result.Result)
+        var manager = new Manager();
+        string command;
+        manager.Connect();
+        switch (command)
         {
-            Console.WriteLine("Подключено успешно!");
-
-            var db = new DbExecutor(connector);
-
-            var tablename = "NetworkUser";
-
-            Console.WriteLine("Получаем данные таблицы " + tablename);
-            data = db.SelectAll(tablename);
-            Console.WriteLine("Количество строк в " + tablename + ": " + data.Rows.Count);
-
-            data = db.SelectAll(tablename);
-            foreach (DataColumn column in data.Columns)
-            {
-                Console.Write($"{column.ColumnName}\t");
-            }
-            Console.WriteLine();
-            foreach (DataRow row in data.Rows)
-            {
-               
-                var cells = row.ItemArray;
-                foreach (var cell in cells)
+            case
+            nameof(Commands.add):
                 {
-                    Console.Write($"{cell}\t");
+                    Add();
+                    break;
                 }
-                Console.WriteLine();
-            }
-            
-            Console.WriteLine();
-           Console.WriteLine("Отключаем БД!");
-            connector.DisconnectAsync();
 
+            case
+            nameof(Commands.delete):
+                {
+                    Delete();
+                    break;
+                }
+            case
+            nameof(Commands.update):
+                {
+                    Update();
+                    break;
+                }
+            case
+            nameof(Commands.show):
+                {
+                    manager.ShowData();
+                    break;
+                }
+                while (command != nameof(Commands.stop)) ;
         }
-        else
-        {
-            Console.WriteLine("Ошибка подключения!");
-        }
-        Console.ReadKey(); 
 
+        manager.Disconnect();
 
-
+        Console.ReadKey();
+        
+        
     }
 
+    static void Update()
+    {
+        Console.WriteLine("Введите логин для обновления:");
+
+        var login = Console.ReadLine();
+
+        Console.WriteLine("Введите имя для обновления:");
+        var name = Console.ReadLine();
+
+        var count = manager.UpdateUserByLogin(login, name);
+
+        Console.WriteLine("Строк обновлено" + count);
+
+        manager.ShowData();
+    }
+
+    static void Add()
+    {
+        Console.WriteLine("Введите логин для добавления:");
+
+        var login = Console.ReadLine();
+
+        Console.WriteLine("Введите имя для добавления:");
+        var name = Console.ReadLine();
+
+        manager.AddUser(name, login);
+
+        manager.ShowData();
+    }
+
+    static void Delete()
+    {
+        Console.WriteLine("Введите логин для удаления:");
+
+        var count = manager.DeleteUserByLogin(Console.ReadLine());
+
+        Console.WriteLine("Количество удаленных строк " + count);
+
+        manager.ShowData();
+    }
+
+    public enum Commands
+    {
+        stop,
+        add,
+        delete,
+        update,
+        show
+    }
 
 }
 
